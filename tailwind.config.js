@@ -7,6 +7,20 @@ export default {
     extend: {
       colors: {
         ...colors,
+        // Brand palette (from Dashboard design)
+        brand: {
+          navy: {
+            DEFAULT: '#102940',
+            light: '#2a4760',
+            dark: '#0a1a2a',
+          },
+          accent: {
+            DEFAULT: '#2EA67A',
+            light: '#3fba8c',
+            dark: '#258a65',
+          },
+        },
+        // Semantic colors
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         chocolate: 'var(--color-chocolate)',

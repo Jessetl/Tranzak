@@ -1,0 +1,147 @@
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page {
+  @apply relative min-h-screen overflow-hidden;
+  color: theme('colors.brand.navy.light');
+  background: linear-gradient(
+    160deg,
+    #f8fafc 0%,
+    rgb(16 41 64 / 0.05) 48%,
+    rgb(16 41 64 / 0.12) 100%
+  );
+}
+
+.container {
+  @apply relative z-10 mx-auto flex min-h-screen w-full max-w-sm flex-col px-6 pb-6;
+}
+
+/* Header / Branding */
+.header {
+  @apply pb-6 pt-12 text-center text-brand-navy;
+  animation: fade-in-up 500ms ease-out both;
+}
+
+.brandTitle {
+  @apply text-4xl font-bold tracking-tight drop-shadow-sm;
+}
+
+.subtitle {
+  @apply mt-2 text-sm font-medium text-brand-navy;
+}
+
+/* Main content */
+.content {
+  @apply flex flex-col justify-center mt-4 flex-1 text-center;
+  animation: fade-in-up 500ms ease-out 100ms both;
+}
+
+/* Form */
+.form {
+  @apply space-y-4 text-left;
+}
+
+.field {
+  @apply block;
+}
+
+.label {
+  @apply mb-1.5 block text-sm font-medium text-brand-navy;
+}
+
+.inputWrapper {
+  @apply relative;
+}
+
+.leadingIcon {
+  @apply pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-brand-navy z-10;
+}
+
+.input {
+  @apply w-full rounded-xl border border-brand-navy/10 bg-white/95 py-3 pl-11 pr-4 text-sm text-gray-900 shadow-sm outline-none backdrop-blur-sm transition placeholder:text-gray-400 focus:border-white focus:bg-white focus:ring-2 focus:ring-white/30;
+}
+
+.passwordInput {
+  @apply pr-12;
+}
+
+.toggleButton {
+  @apply absolute right-3 top-1/2 -translate-y-1/2 rounded-lg p-1 text-gray-400 transition hover:bg-gray-100 hover:text-gray-600 z-10;
+}
+
+.alert {
+  @apply rounded-xl border border-red-300/50 bg-red-50/90 px-4 py-3 text-sm font-medium text-red-700 backdrop-blur-sm;
+}
+
+.submitButton {
+  @apply w-full rounded-xl bg-white px-4 py-3 text-sm font-semibold text-brand-navy shadow-lg transition hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navy;
+}
+
+.forgotLink {
+  @apply mt-3 block text-center text-sm font-medium text-brand-navy/80 transition hover:text-brand-navy;
+}
+
+/* Divider */
+.divider {
+  @apply my-6 flex items-center gap-3;
+}
+
+.dividerLine {
+  @apply h-px flex-1 bg-brand-navy/20;
+}
+
+.dividerText {
+  @apply text-xs font-medium text-brand-navy/60;
+}
+
+/* Social buttons */
+.socialButtons {
+  @apply grid grid-cols-2 gap-3;
+}
+
+.socialButton {
+  @apply flex items-center justify-center gap-2 rounded-xl border border-brand-navy/20 bg-brand-navy/10 px-4 py-2.5 text-sm font-medium text-brand-navy backdrop-blur-sm transition hover:bg-brand-navy/20;
+}
+
+/* Demo hint */
+.demoHint {
+  @apply mt-6 rounded-xl bg-brand-navy/10 px-4 py-3 text-center backdrop-blur-sm cursor-pointer;
+}
+
+.demoText {
+  @apply text-xs text-brand-navy/70;
+}
+
+.demoCredentials {
+  @apply font-medium text-brand-navy;
+}
+
+/* Footer */
+.footer {
+  @apply mt-auto pt-6 text-left;
+  animation: fade-in-up 500ms ease-out 200ms both;
+}
+
+.registerText {
+  @apply text-sm text-brand-navy/70 text-center;
+}
+
+.registerLink {
+  @apply font-semibold text-brand-navy transition hover:underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .content,
+  .footer {
+    animation: none;
+  }
+}

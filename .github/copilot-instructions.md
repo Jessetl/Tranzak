@@ -15,7 +15,7 @@ A continuación, se listan las habilidades habilitadas en este espacio de trabaj
 
 ### 🟢 Skill: Frontend Clean Architecture
 
-- **Archivo de reglas:** `skills/clean-ui-react/SKILLS.md`
+- **Archivo de reglas:** `skills/clean-ui-react/SKILL.md`
 - **Cuándo usarlo:** Cuando la instrucción involucre interfaces de usuario, creación de componentes en React, flujos de estado, consumo de APIs desde el cliente o maquetación.
 - **Ejemplos de activación:** \* "Crea la vista para el dashboard de finanzas."
   - "Haz un hook para manejar la conversión de bolívares a dólares en el frontend."
@@ -23,7 +23,7 @@ A continuación, se listan las habilidades habilitadas en este espacio de trabaj
 
 ### 🟢 Skill: Frontend Tailwindcss
 
-- **Archivo de reglas:** `skills/tailwind-ui-expert/SKILLS.md`
+- **Archivo de reglas:** `skills/tailwind-ui-expert/SKILL.md`
 - **Cuándo usarlo:** Cuando la solicitud se centre en estilos, diseño responsivo, maquetación con Tailwind CSS o personalización de temas.
 - **Ejemplos de activación:** \* "Dame el código para un formulario de login usando Tailwind CSS."
   - "¿Cómo puedo hacer que este componente sea responsive con Tailwind?"
@@ -31,11 +31,19 @@ A continuación, se listan las habilidades habilitadas en este espacio de trabaj
 
 ### 🟢 Skill: Frontend React Performance Expert
 
-- **Archivo de reglas:** `skills/react-performance-expert/SKILLS.md`
+- **Archivo de reglas:** `skills/react-performance-expert/SKILL.md`
 - **Cuándo usarlo:** Cuando la instrucción implique optimización de rendimiento en React, como memoización, lazy loading, optimización de renderizados o manejo eficiente del estado.
 - **Ejemplos de activación:** \* "Optimiza este componente de lista para que no se vuelva a renderizar innecesariamente."
   - "¿Cómo puedo implementar lazy loading para esta imagen en React?"
   - "Refactoriza este código para mejorar el rendimiento sin cambiar su funcionalidad."
+
+### 🟢 Skill: UI/UX Architect & Shadcn/UI Specialist
+
+- **Archivo de reglas:** `skills/shadcn-ux-architect/SKILL.md`
+- **Cuándo usarlo:** Cuando la solicitud se centre en la creación de interfaces de usuario utilizando la arquitectura de shadcn/ui, diseño de sistemas de diseño escalables o experiencias de usuario refinadas.
+- **Ejemplos de activación:** \* "Diseña un dashboard con shadcn/ui que sea accesible y tenga un tema oscuro."
+  - "Crea un componente de formulario complejo usando los componentes de shadcn/ui."
+  - "Refactoriza esta interfaz para que siga las mejores prácticas de UX y sea compatible con shadcn/ui."
 
 ## 3. Protocolo de Ejecución (Obligatorio)
 

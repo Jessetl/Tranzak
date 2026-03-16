@@ -8,7 +8,7 @@ import { tailwindReferenceInjector } from './vite-plugins/tailwindReferenceInjec
 export default defineConfig({
   plugins: [react(), tailwindReferenceInjector(), tailwindcss()],
   server: {
-    allowedHosts: ['smile-vertex-bacterial-beans.trycloudflare.com'],
+    allowedHosts: ['replaced-hold-speed-lcd.trycloudflare.com'],
   },
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],

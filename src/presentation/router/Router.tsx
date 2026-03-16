@@ -6,6 +6,8 @@ import ProtectedRoute from './ProtectedRoute';
 
 const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'));
 const Profile = lazy(() => import('../pages/Profile/Profile'));
+const Statistics = lazy(() => import('../pages/Statistics/Statistics'));
+const Wallet = lazy(() => import('../pages/Wallet/Wallet'));
 const Login = lazy(() => import('../pages/Auth/Login'));
 
 export default function AppRouter(): React.JSX.Element {
@@ -16,6 +18,8 @@ export default function AppRouter(): React.JSX.Element {
         <Route element={<ProtectedRoute />}>
           <Route element={<AuthenticatedLayout />}>
             <Route path='/' element={<Dashboard />} />
+            <Route path='/statistics' element={<Statistics />} />
+            <Route path='/wallet' element={<Wallet />} />
             <Route path='/profile' element={<Profile />} />
           </Route>
         </Route>

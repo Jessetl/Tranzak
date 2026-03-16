@@ -27,7 +27,7 @@ const AppShellFooter = (): React.JSX.Element => {
       <button
         type='button'
         aria-label='Agregar'
-        className='absolute left-1/2 -top-[34px] z-10 flex h-[45px] w-[45px] -translate-x-1/2 items-center justify-center rounded-full bg-finance-emerald text-white shadow-[0_4px_16px_-2px_rgba(16,185,129,0.6)] transition-all hover:bg-finance-emerald-dark active:scale-95 dark:shadow-[0_4px_16px_-2px_rgba(52,211,153,0.5)]'
+        className='absolute left-1/2 -top-[43px] z-10 flex h-[45px] w-[45px] -translate-x-1/2 items-center justify-center rounded-full bg-finance-emerald text-white shadow-[0_4px_16px_-2px_rgba(16,185,129,0.6)] transition-all hover:bg-finance-emerald-dark active:scale-95 dark:shadow-[0_4px_16px_-2px_rgba(52,211,153,0.5)]'
       >
         <Plus className='h-5 w-5' strokeWidth={2.5} />
       </button>
@@ -36,7 +36,7 @@ const AppShellFooter = (): React.JSX.Element => {
         {/* SVG notch — compact, wraps around the button */}
         <svg
           className='block w-full'
-          height='20'
+          height='10'
           viewBox='0 0 375 20'
           preserveAspectRatio='none'
           aria-hidden='true'

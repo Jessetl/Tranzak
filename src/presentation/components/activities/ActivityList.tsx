@@ -15,14 +15,16 @@ const ActivityList: React.FC<ActivityListProps> = ({ activities }) => {
   const sentinelRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Animate initial batch
+  // Reset and animate when activities change (e.g. search filter)
   useEffect(() => {
+    setVisibleCount(BATCH_SIZE);
+    setAnimatedIndexes(new Set());
     for (let i = 0; i < Math.min(BATCH_SIZE, activities.length); i++) {
       setTimeout(() => {
         setAnimatedIndexes((prev) => new Set(prev).add(i));
       }, i * STAGGER_DELAY);
     }
-  }, [activities.length]);
+  }, [activities]);
 
   // Load more when sentinel is visible
   const loadMore = useCallback(() => {

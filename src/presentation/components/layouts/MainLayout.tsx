@@ -13,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({
   fullScreen = false,
 }) => {
   const wrapperClass =
-    'flex min-h-screen w-full justify-center bg-gray-50 dark:bg-gray-900';
+    'flex min-h-screen w-full justify-center bg-finance-mist dark:bg-background';
 
   const contentClass = fullScreen
     ? 'flex min-h-screen w-full max-w-sm flex-col'

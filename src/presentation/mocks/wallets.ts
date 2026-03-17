@@ -1,13 +1,8 @@
-export interface Wallet {
-  id: string;
-  name: string;
-  balanceUSD: number;
-  balanceVES: number;
-  gradient: string;
-  currency: string;
-}
+import type { Wallet } from '@/domain/entities/Wallet';
 
 const USD_TO_VES = 86.5;
+
+export type { Wallet };
 
 export const wallets: Wallet[] = [
   {
@@ -17,6 +12,7 @@ export const wallets: Wallet[] = [
     balanceVES: 1202.47 * USD_TO_VES,
     gradient: 'from-emerald-500 to-teal-700',
     currency: 'USD',
+    bank: 'Banesco',
   },
   {
     id: 'w2',
@@ -25,6 +21,7 @@ export const wallets: Wallet[] = [
     balanceVES: 500.0 * USD_TO_VES,
     gradient: 'from-blue-500 to-indigo-700',
     currency: 'USD',
+    bank: 'Mercantil',
   },
   {
     id: 'w3',
@@ -33,6 +30,7 @@ export const wallets: Wallet[] = [
     balanceVES: 150.0 * USD_TO_VES,
     gradient: 'from-violet-500 to-purple-800',
     currency: 'VES',
+    bank: 'Banco de Venezuela',
   },
   {
     id: 'w4',
@@ -41,6 +39,7 @@ export const wallets: Wallet[] = [
     balanceVES: 3200.0 * USD_TO_VES,
     gradient: 'from-amber-500 to-orange-700',
     currency: 'USD',
+    bank: 'Wells Fargo',
   },
   {
     id: 'w5',
@@ -49,5 +48,6 @@ export const wallets: Wallet[] = [
     balanceVES: 820.33 * USD_TO_VES,
     gradient: 'from-rose-500 to-pink-800',
     currency: 'USDT',
+    bank: 'Binance',
   },
 ];

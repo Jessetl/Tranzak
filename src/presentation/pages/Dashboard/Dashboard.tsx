@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useDebounce } from '@/presentation/hooks/useDebounce';
+import { useWallets } from '@/presentation/hooks/useWallets';
 import ActivityList from '@/presentation/components/activities/ActivityList';
 import WalletCarousel from '@/presentation/components/wallets/WalletCarousel';
 import { recentActivities } from '@/presentation/mocks/recentActivities';
-import { wallets } from '@/presentation/mocks/wallets';
 
 const TranjzakLogo = () => (
   <svg
@@ -43,6 +43,7 @@ const TranjzakLogo = () => (
 const Dashboard = (): React.JSX.Element => {
   const [searchTerm, setSearchTerm] = useState('');
   const debouncedSearch = useDebounce(searchTerm, 400);
+  const { wallets } = useWallets();
 
   const filteredActivities = useMemo(() => {
     if (!debouncedSearch.trim()) return recentActivities;

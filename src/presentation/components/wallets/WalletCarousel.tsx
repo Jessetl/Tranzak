@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Wallet as WalletIcon } from 'lucide-react';
-import type { Wallet } from '@/presentation/mocks/wallets';
+import type { Wallet } from '@/domain/entities/Wallet';
 
 interface WalletCarouselProps {
   wallets: Wallet[];
@@ -34,7 +34,7 @@ const WalletCarousel: React.FC<WalletCarouselProps> = ({ wallets }) => {
       isDragging: true,
     });
     setContainerWidth(e.currentTarget.clientWidth || 300);
-    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
   };
 
   const handlePointerMove = (e: React.PointerEvent) => {
@@ -62,6 +62,7 @@ const WalletCarousel: React.FC<WalletCarouselProps> = ({ wallets }) => {
     <div className='select-none'>
       <div
         className='overflow-hidden rounded-2xl'
+        style={{ touchAction: 'pan-y' }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
